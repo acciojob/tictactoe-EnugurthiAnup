@@ -3,8 +3,8 @@ let player1 = '';
 let player2 = '';
 
 document.getElementById('submit').addEventListener('click', function() {
-    player1 = document.getElementById('player-1').value.trim();
-    player2 = document.getElementById('player-2').value.trim();
+    player1 = document.getElementById('player1').value.trim();
+    player2 = document.getElementById('player2').value.trim();
 
     if (!player1 || !player2) {
         alert('Please enter names for both players.');
@@ -12,7 +12,7 @@ document.getElementById('submit').addEventListener('click', function() {
     }
 
     // Hide input area and show the game board
-    document.querySelector('.player-inputs').style.display = 'none';
+    // document.querySelector('.player-inputs').style.display = 'none';
     document.querySelector('.game').style.display = 'block';
 
     document.querySelector('.message').textContent = `${player1}, you're up`;
