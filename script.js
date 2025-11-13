@@ -1,4 +1,4 @@
-let currentPlayer = 'X'; // or 'O'
+let currentPlayer = 'x'; // or 'O'
 let player1 = '';
 let player2 = '';
 
