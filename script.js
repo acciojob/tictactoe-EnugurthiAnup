@@ -26,7 +26,7 @@ document.querySelectorAll('.cell').forEach(cell => {
             // Check for win after every move
             if (checkWinner()) {
                 let winner = currentPlayer === 'X' ? player1 : player2;
-                document.querySelector('.message').textContent = `${winner}, congratulations you won! 🎉`;
+                document.querySelector('.message').textContent = `${winner}, congratulations you won!`;
                 disableBoard();
                 return;
             }
