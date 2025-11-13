@@ -25,7 +25,7 @@ document.querySelectorAll('.cell').forEach(cell => {
 
             // Check for win after every move
             if (checkWinner()) {
-    let winner = currentPlayer === 'X' ? 'Player1' : 'Player2';
+    let winner = currentPlayer === 'x' ? 'Player1' : 'Player2';
     document.querySelector('.message').textContent = `${winner} congratulations you won!`;
     disableBoard();
     return;
@@ -33,8 +33,8 @@ document.querySelectorAll('.cell').forEach(cell => {
 
 
             // Switch players
-            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            let nextPlayer = currentPlayer === 'X' ? player1 : player2;
+            currentPlayer = currentPlayer === 'x' ? 'o' : 'x';
+            let nextPlayer = currentPlayer === 'x' ? player1 : player2;
             document.querySelector('.message').textContent = `${nextPlayer}, you're up`;
         }
     });
